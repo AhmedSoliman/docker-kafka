@@ -23,4 +23,5 @@ ADD zoo.cfg /etc/zookeeper/conf/zoo.cfg
 # EXPOSE 2181 9092
 
 EXPOSE 2181 9092
+
 CMD ["supervisord", "-n"]
