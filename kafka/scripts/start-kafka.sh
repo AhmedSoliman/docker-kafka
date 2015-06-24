@@ -42,7 +42,7 @@ if [ ! -z "$ZK_CHROOT" ]; then
     }
 
     # configure kafka
-    sed -r -i "s/(zookeeper.connect)=(.*)/\1=127.0.0.1:2181\/$ZK_CHROOT/g" $KAFKA_HOME/config/server.properties
+    sed -r -i "s/(zookeeper.connect)=(.*)/\1=127.0.0.1:2182\/$ZK_CHROOT/g" $KAFKA_HOME/config/server.properties
 fi
 
 # Run Kafka
